@@ -26,8 +26,6 @@ services:
     image: nginx:alpine
     ports:
       - ${PORT?PORT not set}:443
-    environment:
-      - SERVER_NAME=${SERVER_NAME?SERVER_NAME not set}
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf
       - ./certs:/etc/nginx/certs
