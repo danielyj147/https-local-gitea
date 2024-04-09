@@ -1,5 +1,7 @@
 # Self-signed HTTPS Local Gitea Server
 
+[한국어](./README.KR.md)
+
 ## Why??
 
 - Why not? 😎
@@ -17,11 +19,11 @@ docker run --rm -v "$(pwd)/certs:/certs" -it alpine/openssl req -x509 -newkey rs
 
 *Note: The certificate is only valid for the next 365 days. You **MUST** renew the certificate every 365 days.*
 
-### 2. Write .env
+### 2. Write `.env`
 
 - Create and fill out `.env` file based on `.env.example`
 
-### 3. Run docker-compose.yml file.
+### 3. Run docker-compose.yml file
 
 - Execute the command below:
 
